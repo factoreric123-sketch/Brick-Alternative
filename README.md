@@ -91,16 +91,22 @@ This is the **open companion resources repo** for Detach — **not** the app's s
 .
 ├── nfc/          # NFC tag configs & sample NDEF payloads for tap-to-lock tags
 ├── shortcuts/    # Apple Shortcuts recipes to weave Detach into your routine
+├── docs/         # Guides & honest comparisons (reduce screen time, vs Brick/Blok/Bloom)
 ├── screenshots/  # (maintainer) real app screenshots go here
 ├── LICENSE       # MIT — covers these companion resources only, not the app
+├── CONTRIBUTING.md
 └── README.md     # you are here
 ```
 
 Everything in this repo is MIT licensed:
 
-- **NFC tag configurations** — sample payloads/recipes for writing your own tap-to-lock tags.
-- **Apple Shortcuts recipes** — automations to weave Detach into your routine (e.g. a "Focus" trigger).
-- **Docs & comparisons** — honest info on Detach, the NFC card, and how it stacks up against alternatives.
+- **NFC tag configurations** — sample payloads/recipes for writing your own tap-to-lock tags. See [`nfc/`](./nfc/README.md).
+- **Apple Shortcuts recipes** — automations to weave Detach into your routine:
+  - [Detach on Tap (NFC)](./shortcuts/README.md) · [Scheduled auto-block](./shortcuts/scheduled-auto-block.md) · [Wind-down routine](./shortcuts/wind-down-routine.md)
+- **Docs & comparisons** — honest info on Detach and how it stacks up:
+  - [How to reduce screen time on iPhone](./docs/reduce-screen-time-on-iphone.md) · [Detach vs Brick vs Blok vs Bloom](./docs/detach-vs-brick-vs-blok-vs-bloom.md)
+
+Want to add a recipe or fix something? See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 For NFC/Shortcuts examples, use the universal link `https://getdetach.app` as the target. If an app-specific deep link is ever required, it will be clearly marked **(placeholder — confirm Detach's link)** rather than guessed.
 
