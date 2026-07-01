@@ -1,0 +1,19 @@
+Sample NDEF Payload Reference
+=============================
+
+One NDEF URI record (NFC Forum Well-Known Type "U" / RTD-URI).
+
+Record type ......... URI (Well-Known Type, type field = "U", 0x55)
+TNF ................. 0x01 (Well-Known)
+URI prefix code ..... 0x04  (expands to "https://")
+Payload value ....... getdetach.app
+Full URI ............ https://getdetach.app
+
+Payload byte layout:
+  [0x04] getdetach.app
+   |      |
+   |      +-- URI field (ASCII, no scheme; the prefix code supplies it)
+   +--------- URI identifier code: 0x04 = "https://"
+
+Note: scanning this tag opens the Detach universal link (https://getdetach.app).
+Replace this with a Detach-specific deep link once the exact scheme/URL is confirmed.
